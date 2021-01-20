@@ -1,0 +1,27 @@
+#navbarSupportedContent{
+   float:center;
+}
+
+.card:hover {
+    -webkit-box-shadow: 0 10px 20px rgba(153, 153, 153, 0.3);
+    box-shadow: 0 10px 20px rgba(153, 153, 153, 0.3);
+    transition: transform .3s ease-out,box-shadow .3s ease-out;
+    z-index: 2;
+    -webkit-transition: .3s;
+    transition: .03s
+}
+
+.card {
+    -webkit-box-shadow: 0 4px 15px rgba(153, 153, 153, 0.3);
+    box-shadow: 0 2px 5px rgba(153, 153, 153, 0.3);
+    border-radius: .35rem;
+}
+
+
+
+@media screen and (max-width: 768px){
+
+    ul.navbar-nav{
+        text-align:left;
+    }
+}

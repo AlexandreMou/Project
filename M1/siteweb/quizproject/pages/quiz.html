@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Réponse aux quiz</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="../ressources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../ressources/codePerso/custom.css" rel="stylesheet">
+    <link href="../ressources/bootstrap/font/bootstrap-icons.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body class="bg-light">
+  <header class="navbar navbar-expand-lg navbar-dark bg-info text-white text-center">
+    <nav class="container">
+      <div class="container-fluid">
+        <div class="navbar-brand">
+          <a class="navbar-brand" href="../index.html" style="font-size: 1.9rem; font-weight:bolder; font-style: italic; font-family: cursive;">Original'Quiz</a>
+        </div>
+
+      <div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="listeQuiz.html" style="font-size: 1.3rem;">Voir les quiz</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" style="font-size: 1.3rem;">
+                Catégories
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li style="font-size: 1.3rem;"><a class="dropdown-item" href="listeQuizCategorie.html"> <span aria-hidden="true"><i class="bi-pencil" style="font-size: 1.rem; color:#17a2b8;"></i></span> Animaux</a></li>
+                <li style="font-size: 1.3rem;"><a class="dropdown-item" href="listeQuizCategorie.html"> <span aria-hidden="true"><i class="bi-globe" style="font-size: 1.rem; color:#17a2b8;"></i></span> Géographie</a></li>
+                <li style="font-size: 1.3rem;"><a class="dropdown-item" href="listeQuizCategorie.html"> <span aria-hidden="true"><i class="bi-hourglass-split" style="font-size: 1.rem; color:#17a2b8;"></i></span> Histoire</a></li>
+                <li style="font-size: 1.3rem;"><a class="dropdown-item" href="listeQuizCategorie.html"> <span aria-hidden="true"><i class="bi-type" style="font-size: 1.rem; color:#17a2b8;"></i></span> Grammaire</a></li>
+                <li style="font-size: 1.3rem;"><a class="dropdown-item" href="listeQuizCategorie.html"> <span aria-hidden="true"><i class="bi-wifi" style="font-size: 1.rem; color:#17a2b8;"></i></span> Science et technologies</a></li>
+                <li style="font-size: 1.3rem;"><a class="dropdown-item" href="listeQuizCategorie.html"> <span aria-hidden="true"><i class="bi-bicycle" style="font-size: 1.rem; color:#17a2b8;"></i></span> Sports </a></li>
+                <li style="font-size: 1.3rem;"><hr class="dropdown-divider"></li>
+                <li style="font-size: 1.3rem;"><a class="dropdown-item" href="#">Paramètres</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html" style="font-size: 1.3rem;"><span><i class="bi-person-circle" style="font-size: 1.5rem; color:#ffffff;"></i></span></a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </nav>
+  </header><br>
+  <div class="container"> <!-- contenu principal--> 
+    <div class="row">
+
+    </div>  
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-9">           
+                <div class="card mb-12">
+                    <div class="card-header text-center text-white bg-info">
+                        <h4>Titre du quiz</h4>
+                      </div>
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="../ressources/images/quiz.png" alt="..."style="max-width: 240px;">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Le groupe Team IT comprends 7 personnes ?</h5>
+                          <hr>
+                          <a href="#" class="btn btn-info btn-lg" type="button" class="close" data-toggle="modal" data-target="#dommage" aria-label="Close">Vrai</a>
+                          <a href="#" class="btn btn-info float-right btn-lg" type="button" class="close" data-toggle="modal" data-target="#felicitation" aria-label="Close">Faux</a>
+                        </div>
+                      </div>
+                    </div>
+                </div><br>
+
+                <div class="card mb-12">
+                    <div class="card-header text-center text-white bg-info">
+                        <h4>Titre du quiz</h4>
+                      </div>
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="../ressources/images/quiz.png" alt="..."style="max-width: 240px;">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Combien de personnes compte le groupe Team IT ?</h5>
+                          <div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                  5 personnes
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                  6 personnes 
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                  7 personnes
+                                </label>
+                              </div>
+                          </div>
+                          <hr>
+                          <a href="#" class="btn btn-info float-right btn-lg">Suivant</a><br>
+                        </div><br>
+                      </div>
+                    </div>
+                </div> <br>
+            </div><br>
+        </div>
+        <div class="col-md-2"></div>
+    </div>  
+      
+     <!-- Modal  félicitation -->
+     <div class="modal fade" id="felicitation" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header btn-info">
+              <h4 class="modal-title text-center">Félicitations !!!!!!! </h4>
+          </div>
+          <div class="modal-body text-center">
+            <img src="../ressources/images/applauding-41640.svg" alt="..."style="max-width: 240px;"> 
+              
+            <div class="form-group"><br>                              
+                <button type="button" class="btn btn-info btn-lg btn-block" data-dismiss="modal" aria-label="Close"> Suivant</button>
+            </div><br>            
+          </div>
+          <div class="modal-footer float-right">
+          </div>
+      </div>
+      </div>
+  </div>
+
+   <!-- Modal  Dommage -->
+   <div class="modal fade" id="dommage" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <div class="modal-header btn-info">
+            <h4 class="modal-title text-center">Dommage !!!!!!! </h4>
+        </div>
+        <div class="modal-body text-center">
+          <img src="../ressources/images/crying-2089875.svg" alt="..."style="max-width: 240px;"> 
+            
+          <div class="form-group"><br>                              
+              <button type="button" class="btn btn-info btn-lg btn-block" data-dismiss="modal" aria-label="Close"> Suivant</button>
+          </div><br>            
+        </div>
+        <div class="modal-footer float-right">
+        </div>
+    </div>
+    </div>
+</div>
+
+</div> <!-- Fin du contenu principal--> 
+ <script>
+
+
+ </script>
+  <script src="../ressources/jquery/jquery.min.js"></script>
+  <script src="../ressources/bootstrap/jquery/jquery.js"></script>
+  <script src="../ressources/bootstrap/js/jsperso.js"></script>
+  <script src="../ressources/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../ressources/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../ressources/bootstrap/js/bootstrap.js"></script>
+  <script src="../ressources/bootstrap/font/bootstrap-icons.json"></script>
+</body>
+</html>
