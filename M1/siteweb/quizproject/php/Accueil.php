@@ -1,9 +1,12 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Inscription</title>
+    <title>Accueil</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link href="../ressources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../ressources/bootstrap/font/bootstrap-icons.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -13,7 +16,13 @@
     <nav class="container">
       <div class="container-fluid">
         <div class="navbar-brand">
-          <a class="navbar-brand" href="../index.html" style="font-size: 1.9rem; font-weight:bolder; font-style: italic; font-family: cursive;">Original'Quiz</a>
+                  <i class="bi-person-circle" style="font-size: 1.5rem; color:#ffffff;">
+                  </i>
+                  <h1 class="navbar-brand" style="font-size: 1.9rem; font-weight:bolder; font-style: italic; font-family: cursive;">
+                    <?php
+                       echo $_SESSION['pseudo'];
+                    ?>
+                  </h1>
         </div>
 
       <div>
@@ -23,7 +32,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../index.html" style="font-size: 1.3rem;">Connection</a>
+              <a class="nav-link active" aria-current="page" href="Deconnexion.php" style="font-size: 1.3rem;">Déconnection</a>
             </li>
             <li class="nav-item dropdown">
               <a type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" style="font-size: 1.3rem;">
@@ -52,22 +61,19 @@
         <div class="col-md-6">
             <div class="card">
                 <div class="card-body">           
-                    <form method="post" action="../php/Inscription.php">
-                        <img class="card-img-top" src="../ressources/images/quiz.png"  height="200px" alt="" ><br>
-                        <h1 class="h3 mb-3 fw-normal text-center" >Veuillez vous Inscrire</h1>
-                        <label  class="visually-hidden">Entrer votre email</label>
-                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" name="mail" required="" autofocus=""><br>
-                        <label  class="visually-hidden">Entrez votre Pseudo :</label>
-							          <input type="text" id="inputPseudo" class="form-control" placeholder="Pseudo" name="pseudo" required /><br>
-                        <label  class="visually-hidden">Mot de passe</label>
-                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="mdp" required="">
-                        <div class="checkbox mb-3"><br>
-                        <label>
-                            <input type="checkbox" value="remember-me"> Se souvenir de moi
-                        </label>
-                        </div>
-                        <button class="w-100 btn btn-lg btn-info" name="ins" type="submit">Inscription</button>
-                    </form><br>
+                <h1 class="h3 mb-3 fw-normal text-center" >Profil</h1>
+                <label  class="visually-hidden">
+                  Pseudo:
+                  <?php
+                  echo $_SESSION['pseudo'];
+                  ?>
+                </label><br>
+                <label  class="visually-hidden">
+                  Email:
+                  <?php
+                  echo $_SESSION['mail'];
+                  ?>
+                </label><br>
                 </div>
             </div><br>
         </div>
@@ -75,7 +81,7 @@
     </div>  
       
 </div> <!-- Fin du contenu principal--> 
-  <script src="../ressources/jquery/jquery.min.js"></script>
+<script src="../ressources/jquery/jquery.min.js"></script>
   <script src="../ressources/bootstrap/jquery/jquery.js"></script>
   <script src="../ressources/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../ressources/bootstrap/js/bootstrap.min.js"></script>

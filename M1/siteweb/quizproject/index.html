@@ -3,14 +3,13 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Logging</title>
+    <title>Quizz</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link href="ressources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="ressources/bootstrap/font/bootstrap-icons.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body class="bg-light">
-  <header class="navbar navbar-expand-lg navbar-dark bg-info text-white text-center">
-    <nav class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info text-white text-center">
       <div class="container-fluid">
         <div class="navbar-brand">
           <a class="navbar-brand" href="index.html" style="font-size: 1.9rem; font-weight:bolder; font-style: italic; font-family: cursive;">Original'Quiz</a>
@@ -45,14 +44,22 @@
         </div>
       </div>
     </nav>
-  </header><br>
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in" style="color:white">Bienvenue !</div>
+          <div class="intro-heading text-uppercase" style="color:white">Ravi de vous rencontrer</div>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">En savoir plus</a>
+        </div>
+      </div>
+    </header><br>
   <div class="container"> <!-- contenu principal-->   
     <div class="row">
         <div class="col-md-3"></div>
         <div class="col-md-6">
             <div class="card">
                 <div class="card-body">           
-                    <form method="post" action="php/Connection.php">
+                    <form method="post" action="php/Connexion.php">
                         <img class="card-img-top" src="ressources/images/quiz.png"  height="200px" alt="" ><br>
                         <h1 class="h3 mb-3 fw-normal text-center" >Veuillez vous connecter</h1>
                         <label  class="visually-hidden">Entrez votre Pseudo :</label>
@@ -64,21 +71,18 @@
                             <input type="checkbox" value="remember-me"> Se souvenir de moi
                         </label>
                         </div>
-                        <button class="w-100 btn btn-lg btn-info" name="co" type="submit">Connexion</button>
+                        <button class="w-100 btn btn-lg btn-info" name="connexion" type="submit">Connexion</button>
                     </form><br>
                 </div>
             </div><br>
         </div>
-        <div class="col-md-3"></div>
     </div>  
       
 </div> <!-- Fin du contenu principal--> 
   <script src="ressources/jquery/jquery.min.js"></script>
   <script src="ressources/bootstrap/jquery/jquery.js"></script>
-  <script src="ressources/bootstrap/js/jsperso.js"></script>
   <script src="ressources/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="ressources/bootstrap/js/bootstrap.min.js"></script>
   <script src="ressources/bootstrap/js/bootstrap.js"></script>
-  <script src="ressources/bootstrap/font/bootstrap-icons.json"></script>
 </body>
 </html>
