@@ -6,7 +6,7 @@ session_start();
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Accueil</title>
+    <title>Creation Quizz</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link href="../ressources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../ressources/bootstrap/font/bootstrap-icons.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -33,9 +33,6 @@ session_start();
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="Deconnexion.php" style="font-size: 1.3rem;">Déconnection</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="Creation.php" style="font-size: 1.3rem;">Creation Quizz</a>
             </li>
             <li class="nav-item dropdown">
               <a type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" style="font-size: 1.3rem;">
@@ -64,19 +61,52 @@ session_start();
         <div class="col-md-6">
             <div class="card">
                 <div class="card-body">           
-                <h1 class="h3 mb-3 fw-normal text-center" >Profil</h1>
-                <label  class="visually-hidden">
-                  Pseudo:
-                  <?php
-                  echo $_SESSION['pseudo'];
-                  ?>
-                </label><br>
-                <label  class="visually-hidden">
-                  Email:
-                  <?php
-                  echo $_SESSION['mail'];
-                  ?>
-                </label><br>
+                <form method="post" action="php/CreerQuizz.php">
+
+                        <!-- Nom du Quizz-->
+                        <h3 class="h3 mb-3 fw-normal text-center" >NOM</h3>
+                        <input type="text"  class="form-control" placeholder="nom" name="nom" required /><br>
+
+                        <!-- Type du Quizz-->
+                        <h2 class="visually-hidden">Type du Quizz</h2><br>
+                        <input type="radio" name="type"  checked>Sport
+                        <input type="radio" name="type"  checked>Science et Technologies<br>
+                        <input type="radio" name="type"  checked>Animaux
+                        <input type="radio" name="type"  checked>Histoire & Geographie
+                        <input type="radio" name="type"  checked>Grammaire<br><br>
+
+                        <!-- Question-->
+                        <h1 class="h3 mb-3 fw-normal text-center" >Veuillez donnez la question</h1>
+                        <input type="text"  class="form-control" placeholder="Question" name="question" required /><br>
+
+                        <!-- Reponse 1-->
+                        <h2  class="visually-hidden">Reponse 1</h2>
+                        <input type="text"  class="form-control" placeholder="Reponse" name="rep1" required="">
+                        
+                        <!-- Reponse 2-->
+                        <h2  class="visually-hidden">Reponse 2</h2>
+                        <input type="text"  class="form-control" placeholder="Reponse" name="rep1" required="">
+                        
+                        <!-- Reponse 3-->
+                        <h2  class="visually-hidden">Reponse 3</h2>
+                        <input type="text"  class="form-control" placeholder="Reponse" name="rep1" >
+                        
+                        <!-- Reponse 4-->
+                        <h2  class="visually-hidden">Reponse 4</h2>
+                        <input type="text"  class="form-control" placeholder="Reponse" name="rep1" >
+                        <br>
+
+                        <!-- Solution-->
+                        <h2 class="visually-hidden">Solution</h2>
+                        <input type="radio" name="solution"  checked> 1
+                        <input type="radio" name="solution"  checked> 2
+                        <input type="radio" name="solution"  checked> 3
+                        <input type="radio" name="solution"  checked> 4
+                        <br>
+                        <br>
+                        
+                        <button class="w-100 btn btn-lg btn-info" name="creationquizz" type="submit">Creer le Quizz</button>
+                    </form><br>
                 </div>
             </div><br>
         </div>
