@@ -69,11 +69,11 @@ session_start();
 
                         <!-- Type du Quizz-->
                         <h2 class="visually-hidden">Type du Quizz</h2><br>
-                        <input type="radio" name="type"  checked>Sport
-                        <input type="radio" name="type"  checked>Science et Technologies<br>
-                        <input type="radio" name="type"  checked>Animaux
-                        <input type="radio" name="type"  checked>Histoire & Geographie
-                        <input type="radio" name="type"  checked>Grammaire<br><br>
+                        <input type="radio" id="c1" name="type" value="Sport"  checked>Sport
+                        <input type="radio" id="c2" name="type"  value="Science et Technologies" checked>Science et Technologies<br>
+                        <input type="radio" id="c3" name="type"  value="Animaux" checked>Animaux
+                        <input type="radio" id="c4" name="type"  value="Histoire & Geographie" checked>Histoire & Geographie
+                        <input type="radio" id="c5" name="type"  value="Grammaire" checked>Grammaire<br><br>
 
                         <!-- Question-->
                         <h1 class="h3 mb-3 fw-normal text-center" >Veuillez donnez la question</h1>
@@ -98,10 +98,10 @@ session_start();
 
                         <!-- Solution-->
                         <h2 class="visually-hidden">Solution</h2>
-                        <input type="radio" name="solution"  checked> 1
-                        <input type="radio" name="solution"  checked> 2
-                        <input type="radio" name="solution"  checked> 3
-                        <input type="radio" name="solution"  checked> 4
+                        <input type="radio" id="s1" name="solution"  value="1"  checked> 1
+                        <input type="radio" id="s2" name="solution"  value="2"  checked> 2
+                        <input type="radio" id="s3" name="solution"  value="3"  checked> 3
+                        <input type="radio" id="s4" name="solution"  value="4"  checked> 4
                         <br>
                         <br>
                         
